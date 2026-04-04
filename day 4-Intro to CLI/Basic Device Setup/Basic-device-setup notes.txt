@@ -1,0 +1,17 @@
+Basic Device Setup
+ Cisco Packet Tracer | 
+Devices: R1 (Router), SW1 (Switch)
+
+# Tasks Completed
+- [x] Set hostnames using `hostname` command
+- [x] Configured `enable password` (Type 7) and `enable secret` (Type 5)
+- [x] Encrypted passwords with `service password-encryption`
+- [x] Configured IP address on GigabitEthernet0/0
+- [x] Brought interface up with `no shutdown`
+- [x] Verified with `show ip interface brief` and `show running-config`
+- [x] Saved config with `copy running-config startup-config`
+
+# Key Lessons
+- Router interfaces are **shutdown by default — always use `no shutdown`
+- `enable secret` always overrides `enable password` when both are set
+- Always run `show ip interface brief` to confirm up/up before pinging
